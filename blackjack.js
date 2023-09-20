@@ -39,6 +39,11 @@ function shuffleDeck() {
     console.log(deck);
 }
 
+function restart() {
+    window.location.reload();
+}
+
+
 function startGame() {
     hidden = deck.pop();
     dealerSum += getValue(hidden);
@@ -68,6 +73,8 @@ function startGame() {
     console.log(yourSum);
     document.getElementById("hit").addEventListener("click", hit);
     document.getElementById("stay").addEventListener("click", stay);
+    document.getElementById("restart").addEventListener("click", restart);
+
 
 }
 
